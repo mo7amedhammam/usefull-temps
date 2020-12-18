@@ -54,7 +54,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellID") as! CellVC
 //        cell.cellLAble.text = self.darshArray[indexPath.row] as! String
         
-        cell.cellLAble.text = "name is"
+        cell.cellLAble.text = "name is\(self.darshArray[indexPath.row])"
         
         return cell
     }
