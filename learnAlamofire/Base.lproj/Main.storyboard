@@ -43,6 +43,7 @@
                                                         <constraint firstItem="Sb9-pI-Eg6" firstAttribute="top" secondItem="f6B-Oy-9dy" secondAttribute="top" constant="5" id="Xxx-ef-B0F"/>
                                                         <constraint firstAttribute="trailing" secondItem="Sb9-pI-Eg6" secondAttribute="trailing" constant="5" id="cd0-7L-1QA"/>
                                                         <constraint firstAttribute="bottom" secondItem="Sb9-pI-Eg6" secondAttribute="bottom" constant="5" id="jcc-sN-X61"/>
+                                                        <constraint firstAttribute="height" constant="100" id="xDD-0d-t19"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
