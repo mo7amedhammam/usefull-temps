@@ -12,7 +12,7 @@ import SwiftyJSON
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
     var darshArray = [JSON]()
-    var obj  = CollectionViewController() //object to access what inside it
+
     @IBOutlet weak var TViewOutLet: UITableView!
     @IBOutlet weak var CellOutlet: UITableViewCell!
     
@@ -81,8 +81,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(self.darshArray[indexPath.row])
 //        showAlert(title: "Allert Dialog Title", msg: "You Tapped on : \(self.darshArray[indexPath.row])")
-        guard let pushBU = self.storyboard?.instantiateViewController(withIdentifier: "collviewID") else { return }
-        obj.name = "Medooo" //to send value to second VC using it's object
+        guard let pushBU = self.storyboard?.instantiateViewController(withIdentifier: "MainVCCollectionView") else { return }
         self.navigationController?.pushViewController(pushBU, animated: true)
 
     }
