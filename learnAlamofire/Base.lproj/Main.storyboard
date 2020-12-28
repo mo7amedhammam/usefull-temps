@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="tableViewId" id="BYZ-38-t0r" customClass="ViewController" customModule="learnAlamofire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tableViewId" id="BYZ-38-t0r" customClass="ViewController" customModule="PizzaWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="103" id="Ziy-HG-gO2" customClass="CellVC" customModule="learnAlamofire" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" rowHeight="103" id="Ziy-HG-gO2" customClass="CellVC" customModule="PizzaWay" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="103"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ziy-HG-gO2" id="Wwf-bf-JmC">
@@ -82,7 +82,7 @@
         <!--MainVC-->
         <scene sceneID="42m-Qw-Yxd">
             <objects>
-                <viewController storyboardIdentifier="MainVCCollectionView" id="Xh2-QC-sKg" userLabel="MainVC" customClass="MainVCCollectionView" customModule="learnAlamofire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVCCollectionView" id="Xh2-QC-sKg" userLabel="MainVC" customClass="MainVCCollectionView" customModule="PizzaWay" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cKd-Xz-XwV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,16 +91,16 @@
                                 <rect key="frame" x="0.0" y="1.5" width="414" height="265.5"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cazabanka" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hu3-Q7-WyF">
-                                <rect key="frame" x="150" y="59" width="114" height="28"/>
+                                <rect key="frame" x="20" y="54" width="374" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="NtR-Ik-uDP"/>
+                                    <constraint firstAttribute="height" constant="25" id="NtR-Ik-uDP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-cu-vqJ">
-                                <rect key="frame" x="0.0" y="107" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="84" width="414" height="300"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="L5P-ub-fTC"/>
@@ -113,28 +113,28 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gKd-i9-cUc">
-                                <rect key="frame" x="2" y="409" width="410" height="451"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4pB-AM-ZlY">
-                                <rect key="frame" x="145.5" y="376" width="123" height="28"/>
+                                <rect key="frame" x="145.5" y="357" width="123" height="28"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGray2Color"/>
                                 <color key="currentPageIndicatorTintColor" systemColor="linkColor"/>
                             </pageControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gKd-i9-cUc">
+                                <rect key="frame" x="2" y="386" width="410" height="474"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sjO-9W-gjg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="hu3-Q7-WyF" firstAttribute="leading" secondItem="sjO-9W-gjg" secondAttribute="leading" constant="150" id="6iQ-Ug-BRb"/>
+                            <constraint firstItem="hu3-Q7-WyF" firstAttribute="leading" secondItem="sjO-9W-gjg" secondAttribute="leading" constant="20" id="6iQ-Ug-BRb"/>
                             <constraint firstItem="xkh-n2-bDg" firstAttribute="height" secondItem="cKd-Xz-XwV" secondAttribute="height" multiplier="0.3" id="7Gh-sD-610"/>
                             <constraint firstItem="gKd-i9-cUc" firstAttribute="leading" secondItem="sjO-9W-gjg" secondAttribute="leading" constant="2" id="CSh-Nw-hdw"/>
-                            <constraint firstItem="Gwl-cu-vqJ" firstAttribute="top" secondItem="hu3-Q7-WyF" secondAttribute="bottom" constant="20" id="GXT-9N-wlm"/>
+                            <constraint firstItem="Gwl-cu-vqJ" firstAttribute="top" secondItem="hu3-Q7-WyF" secondAttribute="bottom" constant="5" id="GXT-9N-wlm"/>
                             <constraint firstItem="Gwl-cu-vqJ" firstAttribute="trailing" secondItem="sjO-9W-gjg" secondAttribute="trailing" id="HVM-Dl-v7I"/>
-                            <constraint firstItem="hu3-Q7-WyF" firstAttribute="top" secondItem="sjO-9W-gjg" secondAttribute="top" constant="15" id="LES-yE-uoj"/>
-                            <constraint firstItem="gKd-i9-cUc" firstAttribute="top" secondItem="4pB-AM-ZlY" secondAttribute="bottom" constant="5" id="UrP-32-fLO"/>
+                            <constraint firstItem="hu3-Q7-WyF" firstAttribute="top" secondItem="sjO-9W-gjg" secondAttribute="top" constant="10" id="LES-yE-uoj"/>
+                            <constraint firstItem="gKd-i9-cUc" firstAttribute="top" secondItem="4pB-AM-ZlY" secondAttribute="bottom" constant="1" id="UrP-32-fLO"/>
                             <constraint firstItem="sjO-9W-gjg" firstAttribute="bottom" secondItem="gKd-i9-cUc" secondAttribute="bottom" constant="2" id="V0n-Y8-mAw"/>
-                            <constraint firstItem="sjO-9W-gjg" firstAttribute="trailing" secondItem="hu3-Q7-WyF" secondAttribute="trailing" constant="150" id="YC6-n8-HJv"/>
+                            <constraint firstItem="sjO-9W-gjg" firstAttribute="trailing" secondItem="hu3-Q7-WyF" secondAttribute="trailing" constant="20" id="YC6-n8-HJv"/>
                             <constraint firstItem="xkh-n2-bDg" firstAttribute="leading" secondItem="sjO-9W-gjg" secondAttribute="leading" id="g3a-Tl-GLS"/>
                             <constraint firstItem="Gwl-cu-vqJ" firstAttribute="leading" secondItem="sjO-9W-gjg" secondAttribute="leading" id="g4W-rx-0us"/>
                             <constraint firstItem="sjO-9W-gjg" firstAttribute="trailing" secondItem="gKd-i9-cUc" secondAttribute="trailing" constant="2" id="iAc-9P-bjH"/>
@@ -147,6 +147,7 @@
                     <connections>
                         <outlet property="pageControl" destination="4pB-AM-ZlY" id="Wwb-et-t5U"/>
                         <outlet property="sliderCollectionViewOutlet" destination="Gwl-cu-vqJ" id="wOp-QQ-O0u"/>
+                        <outlet property="tableViewOutlet" destination="gKd-i9-cUc" id="DQ0-38-fls"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHK-cB-KKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -182,6 +183,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
